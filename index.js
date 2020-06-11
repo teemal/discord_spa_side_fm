@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 require('dotenv').config()
+const search = require('./youtube')
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 prefix = '!'
